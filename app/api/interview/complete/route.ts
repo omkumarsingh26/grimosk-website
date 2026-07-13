@@ -41,7 +41,7 @@ export async function POST(req: Request) {
       `interview-submissions/${safeSlug(candidateName)}_${sessionId}/meta.json`,
       JSON.stringify(meta, null, 2),
       {
-        access: "public",
+        access: "private",
         addRandomSuffix: false,
         allowOverwrite: true,
         contentType: "application/json",

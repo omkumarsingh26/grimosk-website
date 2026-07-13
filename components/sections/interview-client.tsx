@@ -204,7 +204,7 @@ export function InterviewClient() {
 
     try {
       const result = await upload(pathname, fileBlob, {
-        access: "public",
+        access: "private",
         contentType: "video/webm",
         handleUploadUrl: "/api/interview/upload",
       });
